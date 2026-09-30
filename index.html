@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Digital Responsive - [Bagas Arya]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page-wrapper">
+        <!-- Kartu Profil Utama -->
+         <article class="profile-card">
+
+            <!-- Kolom Kiri / Header Profil -->
+             <header class="card-aside">
+                <button id="btnToggleTema" class="btn-tema">
+                    ☀️ Ganti Mode
+                </button>
+                <div class="avatar-box">
+                    <span class="avatar-icon">👨‍💻</span>
+                </div>
+                <h1 class="student-name">[Bagas Arya]</h1>
+                <p class="student-role">Junior Web Developer</p>
+                <p class="student-school">SMKS Brantas Karangkates - PPLG</p>
+                <a href="mailto:bagasrpl45@gmail.com" id="btnBukaModal" class="btn-contact">Kirim Pesan</a>
+
+                <div class="profile-rating-box">
+                    <h3 class="rating-heading">Beri Rating</h3>
+                    <div class="profile-rating-picker" id="profileRatingPicker">
+                        <span class="profile-rating-star" data-value="1">★</span>
+                        <span class="profile-rating-star" data-value="2">★</span>
+                        <span class="profile-rating-star" data-value="3">★</span>
+                        <span class="profile-rating-star" data-value="4">★</span>
+                        <span class="profile-rating-star" data-value="5">★</span>
+                    </div>
+                    <p class="rating-feedback" id="ratingFeedback">Beri Rating Untuk Profil Ini</p>
+                </div>
+             </header>
+
+             <!-- Kolom Kanan / Konten Detail -->
+              <section class="card-content">
+                <div class="bio-section">
+                    <h2 class="section-heading">Tentang Saya</h2>
+                    <p class="bio-text">
+                        Siswa kelas 10 Pengembangan Perangkat Lunak & Gim yang berfokus
+                        mendalami arsitektur Front-End modern, tata letak CSS Flexbox, 
+                        serta prinsip Mobile-First Design Responsive standar industri
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h2 class="section-heading">Keahlihan & Kompetensi</h2>
+                    <div class="skill-matrix">
+                        <div class="skill-badge" data-desc="Menulis struktur halaman web yang rapi dan mudah diakses menggunakan tag-tag semantik HTML5.">HTML5 Semantic</div>
+                        <div class="skill-badge" data-desc="Mengatur tata letak elemen secara fleksibel dan responsif menggunakan CSS3 Flexbox.">CSS3 Flexbox</div>
+                        <div class="skill-badge" data-desc="Merancang tampilan yang menyesuaikan diri di berbagai ukuran layar, dari mobile hingga desktop.">Responsive Design</div>
+                        <div class="skill-badge" data-desc="Menyesuaikan tampilan menggunakan @media query agar tetap optimal di berbagai perangkat.">Media Queries</div>
+                        <div class="skill-badge" data-desc="Menggunakan Chrome DevTools untuk debugging, inspeksi elemen, dan memeriksa error di console.">Chrome DevTools</div>
+                        <div class="skill-badge" data-desc="Mengelola versi kode dan kolaborasi proyek menggunakan Git & GitHub.">Git & GitHub (Next)</div>
+                    </div>
+                </div>
+                <div class="review-section">
+                    <h2 class="section-heading">Berikan Ulasan Anda Melalui Komentar</h2>
+
+                    <div class="review-input-box">
+                        <div class="review-rating-picker" id="ratingPicker">
+                            <span class="rating-star" data-value="1">★</span>
+                            <span class="rating-star" data-value="2">★</span>
+                            <span class="rating-star" data-value="3">★</span>
+                            <span class="rating-star" data-value="4">★</span>
+                            <span class="rating-star" data-value="5">★</span>
+                        </div>
+                        <div class="review-input-row">
+                            <input type="text" id="inputUlasan" class="review-input" placeholder="Tulis Ulasan Anda Di Sini ...">
+                            <button id="btnKirimUlasan" class="btn-kirim-ulasan">Kirim</button>
+                        </div>
+                    </div>
+
+                    <div id="reviewList" class="review-list"></div>
+                </div>
+              </section>
+
+         </article>
+    </main>
+    <div id="modalKontak" class="modal-overlay">
+        <div class="modal-box">
+            <h2>Kirim Pesan</h2>
+            <p>Silahkan hubungi saya melalui email: bagasrpl45@gmail.com</p>
+            <button id="btnTutupModal" class="btn-tutup">Tutup</button>
+        </div>
+    </div>
+
+    <div id="modalSkill" class="modal-overlay">
+        <div class="modal-box">
+            <h2 id="skillTitle"></h2>
+            <p id="skillDesc"></p>
+            <button id="btnTutupSkillModal" class="btn-tutup">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
